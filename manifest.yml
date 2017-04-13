@@ -4,7 +4,7 @@ default_versions:
 - name: go
   version: 1.7.5
 dependency_deprecation_dates:
-- version_line: '1.6.x'
+- version_line: 1.6.x
   name: go
   date: 2017-02-16
 dependencies:
@@ -52,8 +52,8 @@ dependencies:
   - cflinuxfs2
 - name: glide
   version: v0.12.3
-  uri: https://buildpacks.cloudfoundry.org/dependencies/glide/glide-v0.12.3-linux-x64-aa256363.tgz
-  md5: aa2563632fee49a276c117e814bef851
+  uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-9dfdd846.tgz
+  md5: 9dfdd846cabbb7164e66e56b13a7cfb9
   cf_stacks:
   - cflinuxfs2
 exclude_files:
@@ -77,5 +77,4 @@ exclude_files:
 - cf.Gemfile.lock
 - cf.Gemfile
 - scripts/
-
 pre_package: scripts/build.sh
