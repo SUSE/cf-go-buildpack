@@ -52,8 +52,8 @@ dependencies:
   - cflinuxfs2
 - name: glide
   version: v0.12.3
-  uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-a608457a.tgz
-  md5: a608457a0e1ae312c4eee8fc2526bdc5
+  uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-0983b8d6.tgz
+  md5: 0983b8d65a14be1d67313de5067caf29
   cf_stacks:
   - cflinuxfs2
 exclude_files:
