@@ -44,16 +44,16 @@ dependencies:
   md5: b05c0cbb28503d038a47d87a6b3b8e86
   cf_stacks:
   - cflinuxfs2
-- name: godep
-  version: v79
-  uri: https:///dependencies/godep/godep-v79-linux-x64-b2914461.tgz
-  md5: b2914461fe80ffd093c2e2980715e957
-  cf_stacks:
-  - cflinuxfs2
 - name: glide
   version: v0.12.3
   uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-0983b8d6.tgz
   md5: 0983b8d65a14be1d67313de5067caf29
+  cf_stacks:
+  - cflinuxfs2
+- name: godep
+  version: v79
+  uri: https:///dependencies/godep/godep-v79-linux-x64-3035dce5.tgz
+  md5: 3035dce5485099cd42b87e29c40c6259
   cf_stacks:
   - cflinuxfs2
 exclude_files:
