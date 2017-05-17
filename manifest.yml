@@ -46,8 +46,8 @@ dependencies:
   - cflinuxfs2
 - name: glide
   version: v0.12.3
-  uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-1f88d6d7.tgz
-  md5: 1f88d6d7ec86ee2e6c8e81e67310021c
+  uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-a2ab741e.tgz
+  md5: a2ab741e02a53437705d0fec04093f4d
   cf_stacks:
   - cflinuxfs2
 - name: godep
