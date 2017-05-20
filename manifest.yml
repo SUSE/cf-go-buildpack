@@ -52,8 +52,8 @@ dependencies:
   - cflinuxfs2
 - name: godep
   version: v79
-  uri: https:///dependencies/godep/godep-v79-linux-x64-8cefffe0.tgz
-  md5: 8cefffe00f5749ec1e3e4bdb947b4331
+  uri: https:///dependencies/godep/godep-v79-linux-x64-41368325.tgz
+  md5: 4136832524b1abc074f78b1909deaf60
   cf_stacks:
   - cflinuxfs2
 exclude_files:
