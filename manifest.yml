@@ -44,6 +44,12 @@ dependencies:
   md5: b05c0cbb28503d038a47d87a6b3b8e86
   cf_stacks:
   - cflinuxfs2
+- name: go
+  version: 1.8.1
+  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/go/go1.8.1.linux-amd64-c4d424a7.tar.gz
+  md5: c4d424a7543c0064ee1c79412fb380c3
+  cf_stacks:
+  - opensuse42
 - name: glide
   version: v0.12.3
   uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-f0872e65.tgz
