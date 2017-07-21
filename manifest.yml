@@ -58,8 +58,8 @@ dependencies:
   - opensuse42
 - name: glide
   version: v0.12.3
-  uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-bb4a48e2.tgz
-  md5: bb4a48e217c2fb2a2cf0d5eee5664e94
+  uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-e3329c10.tgz
+  md5: e3329c10eac6dea69864c5b191c6caa9
   cf_stacks:
   - opensuse42
 exclude_files:
