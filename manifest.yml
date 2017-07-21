@@ -50,16 +50,16 @@ dependencies:
   md5: c4d424a7543c0064ee1c79412fb380c3
   cf_stacks:
   - opensuse42
-- name: godep
-  version: v79
-  uri: https:///dependencies/godep/godep-v79-linux-x64-4d6b846c.tgz
-  md5: 4d6b846c67266d4c22aea85e1494c959
-  cf_stacks:
-  - opensuse42
 - name: glide
   version: v0.12.3
   uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/glide/glide-v0.12.3-linux-x64-8519931b.tgz
   md5: 8519931b84677d16e928a0bf2b808c13
+  cf_stacks:
+  - opensuse42
+- name: godep
+  version: v79
+  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/godep/godep-v79-linux-x64-d9bf2378.tgz
+  md5: d9bf2378df0f2fa2c46d868c5c0d767e
   cf_stacks:
   - opensuse42
 exclude_files:
