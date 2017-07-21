@@ -58,8 +58,8 @@ dependencies:
   - opensuse42
 - name: glide
   version: v0.12.3
-  uri: https:///dependencies/glide/glide-v0.12.3-linux-x64-e3329c10.tgz
-  md5: e3329c10eac6dea69864c5b191c6caa9
+  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/glide/glide-v0.12.3-linux-x64-8519931b.tgz
+  md5: 8519931b84677d16e928a0bf2b808c13
   cf_stacks:
   - opensuse42
 exclude_files:
