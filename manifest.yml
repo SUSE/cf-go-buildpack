@@ -2,11 +2,12 @@
 language: go
 default_versions:
 - name: go
-  version: 1.7.5
+  version: 1.8.3
 dependency_deprecation_dates:
-- version_line: 1.6.x
+- version_line: '1.6.x'
   name: go
   date: 2017-02-16
+  link: https://golang.org/doc/devel/release.html
 dependencies:
 - name: go
   version: 1.6.3
@@ -27,15 +28,9 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
 - name: go
-  version: 1.7.4
-  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.7.4.linux-amd64-bb76b26f.tar.gz
-  md5: bb76b26f8dc9886d42291eba95c84f10
-  cf_stacks:
-  - cflinuxfs2
-- name: go
-  version: 1.8.0
-  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.8.linux-amd64-7eff0eab.tar.gz
-  md5: 7eff0eab89b4bbdc4edea6beb672ed66
+  version: 1.7.6
+  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.7.6.linux-amd64-a98caa07.tar.gz
+  md5: a98caa07ad65b548ce19122dbcc61573
   cf_stacks:
   - cflinuxfs2
 - name: go
@@ -45,9 +40,27 @@ dependencies:
   cf_stacks:
   - cflinuxfs2
 - name: go
-  version: 1.8.1
-  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/go/go1.8.1.linux-amd64-c4d424a7.tar.gz
-  md5: c4d424a7543c0064ee1c79412fb380c3
+  version: 1.8.3
+  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.8.3.linux-amd64-32ec5ac6.tar.gz
+  md5: 32ec5ac6020a0dbae5fadd1ff6dfdaf7
+  cf_stacks:
+  - cflinuxfs2
+- name: godep
+  version: v79
+  uri: https://buildpacks.cloudfoundry.org/dependencies/godep/godep-v79-linux-x64-9e37ce0f.tgz
+  md5: 9e37ce0f6a258baf4848ded20ef49ba4
+  cf_stacks:
+  - cflinuxfs2
+- name: glide
+  version: v0.12.3
+  uri: https://buildpacks.cloudfoundry.org/dependencies/glide/glide-v0.12.3-linux-x64-aa256363.tgz
+  md5: aa2563632fee49a276c117e814bef851
+  cf_stacks:
+  - cflinuxfs2
+- name: godep
+  version: v79
+  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/godep/godep-v79-linux-x64-d9bf2378.tgz
+  md5: d9bf2378df0f2fa2c46d868c5c0d767e
   cf_stacks:
   - opensuse42
 - name: glide
@@ -56,10 +69,10 @@ dependencies:
   md5: 8519931b84677d16e928a0bf2b808c13
   cf_stacks:
   - opensuse42
-- name: godep
-  version: v79
-  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/godep/godep-v79-linux-x64-d9bf2378.tgz
-  md5: d9bf2378df0f2fa2c46d868c5c0d767e
+- name: go
+  version: 1.8.3
+  uri: https://minio.from-the.cloud:9000/cf-buildpacks/dependencies/go/go1.8.3.linux-amd64-3ff22bd0.tar.gz
+  md5: 3ff22bd0c3e83fe4f52ecbe68582b7fe
   cf_stacks:
   - opensuse42
 exclude_files:
@@ -83,4 +96,5 @@ exclude_files:
 - cf.Gemfile.lock
 - cf.Gemfile
 - scripts/
+
 pre_package: scripts/build.sh
