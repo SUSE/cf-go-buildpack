@@ -75,6 +75,138 @@ dependencies:
   sha256: 3b019ddcd6919f748a6612a09b63b385fc2ef7f0dae08d064d6d64d274cfda04
   cf_stacks:
   - cflinuxfs2
+- name: go
+  version: 1.6.3
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/go/go1.6.3.linux-amd64-b85b98ea.tar.gz
+  sha256: f125f0ccbd40093435caa946583266d4ddac7ff2361fbc627aa497e29582576c
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.6.4
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/go/go1.6.4.linux-amd64-8ee5b084.tar.gz
+  sha256: 6278f3123957e766e780c7111532779452403d9d1063bec6154956b5ea58fc59
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.7.5
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/go/go1.7.5.linux-amd64-c6e07ab1.tar.gz
+  sha256: 89d1f5b7c5f8799a994212197b3cb15362039d50814a128f226748f9e26ace5e
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.7.6
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/go/go1.7.6.linux-amd64-bd6a1bd0.tar.gz
+  sha256: a350ae2e3e00f8990826069a25b32c8ea488eda2d53c36c9dcb47510e2e0fb90
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.8.6
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/go/go1.8.6.linux-amd64-a793a233.tar.gz
+  cf_stacks:
+  - opensuse42
+  sha256: a793a233851906a7dd7e18e2e015dad2432faf7b6558465d7b968113708a81e9
+- name: go
+  version: 1.8.7
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/go/go1.8.7.linux-amd64-f847a439.tar.gz
+  cf_stacks:
+  - opensuse42
+  sha256: f847a439e0104b94b06b9fa1e25820220c20fb0815ca02fb823db09680f1c4c8
+- name: go
+  version: 1.9.3
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/go/go1.9.3.linux-amd64-e0c5b41f.tar.gz
+  cf_stacks:
+  - opensuse42
+  sha256: e0c5b41f9fc09f98334b38a5346a69b00ec3c3cef24027f7230dfd321c530539
+- name: go
+  version: 1.9.4
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/go/go1.9.4.linux-amd64-bd30082f.tar.gz
+  cf_stacks:
+  - opensuse42
+  sha256: bd30082fd45e8f707df3da064fb008b53d04dd5c8d1aadf9e466e473fb387928
+- name: glide
+  version: v0.13.1
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/glide/glide-v0.13.1-linux-x64-1e0b35bb.tgz
+  sha256: 246e48735b9c53ca46e7d5e8d5b3033d73dab8cca9efc708b533e707a9cd84d0
+  cf_stacks:
+  - opensuse42
+- name: godep
+  version: v80
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/godep/godep-v80-linux-x64-8779ae77.tgz
+  sha256: 8779ae77e5280c737ce4aa99e476ef239de4c0c10feb113ac266da9a3b980a7e
+  cf_stacks:
+  - opensuse42
+- name: dep
+  version: v0.4.1
+  uri: https://s3.amazonaws.com/cf-opensusefs2/dependencies/dep/dep-v0.4.1-linux-x64-582a540d.tgz
+  sha256: 582a540d16ece50cf0a44a444f924a0e58a7120b4126fc12d9e6cc89aa4dda52
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.6.3
+  uri: https://cf-sle12.s3.amazonaws.com/dependencies/go/go1.6.3.linux-amd64-5b4c898d.tar.gz
+  sha256: 5901a3d8606694609c2ca82d35a03665aa100c421dc95ab7a55c4bbde8535771
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.6.4
+  uri: https://cf-sle12.s3.amazonaws.com/dependencies/go/go1.6.4.linux-amd64-93aeb934.tar.gz
+  sha256: d360796a291b18271bb1a7c3997ee046c9eefd27ac09c456bc85a4d656c8594b
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.7.5
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/go/go1.7.5.linux-amd64-012edf03.tar.gz
+  sha256: 720503fc3ca84f915edbc047a9853bef1572e516dab2790159317e30c0396d42
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.7.6
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/go/go1.7.6.linux-amd64-1f67c98f.tar.gz
+  sha256: c6fd64738355688f35c790f7e11ec245681795c4c6d136eb08265207b6f14679
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.8.6
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/go/go1.8.6.linux-amd64-56a91fd7.tar.gz
+  cf_stacks:
+  - sle12
+  sha256: 56a91fd703a508692a1724021bd8bf5df19cce08cb620d5507e9e21db2f554ec
+- name: go
+  version: 1.8.7
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/go/go1.8.7.linux-amd64-0440039e.tar.gz
+  cf_stacks:
+  - sle12
+  sha256: 0440039ec148b7878d66b03c0c36c83cc19c47afe91a89d63c05feb963c9b712
+- name: go
+  version: 1.9.3
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/go/go1.9.3.linux-amd64-40acf879.tar.gz
+  cf_stacks:
+  - sle12
+  sha256: 40acf879b17fce6517fc2c87dca4465d9ed739d791a9ea030922cbd6d510f2fb
+- name: go
+  version: 1.9.4
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/go/go1.9.4.linux-amd64-8e060ef6.tar.gz
+  cf_stacks:
+  - sle12
+  sha256: 8e060ef6bff2fae70a1b0a0518efacefc6034314743176aba57e470cf3d48f7b
+- name: glide
+  version: v0.13.1
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/glide/glide-v0.13.1-linux-x64-0de559d4.tgz
+  sha256: 11eba87f2ca4a8a091467e12d52af80846953c10ad6f30cb0849ba7e9c52b54e
+  cf_stacks:
+  - sle12
+- name: dep
+  version: v0.4.1
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/dep/dep-v0.4.1-linux-x64-2bcee6ba.tgz
+  sha256: 2bcee6ba3f0154f46741d9432a8be3d1785b840f0794c132db8b7c37e4370c8a
+  cf_stacks:
+  - sle12
+- name: godep
+  version: v80
+  uri: https://s3.amazonaws.com/cf-sle12/dependencies/godep/godep-v80-linux-x64-72a1ed1b.tgz
+  sha256: 72a1ed1beb7d83d7c64662e8eff8e9f47b5ae746ca91b44a78c029a29b4b2ece
+  cf_stacks:
+  - sle12
 include_files:
 - CHANGELOG
 - CONTRIBUTING.md
