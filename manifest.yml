@@ -141,6 +141,162 @@ dependencies:
   sha256: b60ac947eb80b5961285546d2a3fecd29fc4d263e02c7f2fb7a97db7e938ff9e
   cf_stacks:
   - cflinuxfs3
+- name: dep
+  version: 0.5.0
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/dep-0.5.0-linux-x64-e5296274.tgz
+  sha256: e5296274952c7452a9ae4733f47af786b6ba515d852731fa8f1af89f0f60a6c5
+  cf_stacks:
+  - sle12
+- name: dep
+  version: 0.5.0
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/dep-0.5.0-linux-x64-4b27ff1c.tgz
+  sha256: 4b27ff1c1977dbc0c61c48828ed6ca392046d00e240520ab4fa5bd1286f78e10
+  cf_stacks:
+  - opensuse42
+- name: glide
+  version: 0.13.1
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/glide-0.13.1-linux-x64-30072a5f.tgz
+  sha256: 30072a5f097724f6eba3b5b4a1af908a8f3ac941cdb0a055536e08044f4ae8fb
+  cf_stacks:
+  - sle12
+- name: glide
+  version: 0.13.1
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/glide-0.13.1-linux-x64-5edf0347.tgz
+  sha256: 5edf034700c56f2fb65eff2129dd9248a3c53c9528de0fc0e81a8e2eccef68bc
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.6.3
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.6.3-linux-amd64-6e5be7b6.tgz
+  sha256: 6e5be7b6907eda2bae8ae76b5ab5b9f051166188176a2fc0923abe99dc5861a0
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.6.3
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.6.3-linux-amd64-452e14fc.tgz
+  sha256: 452e14fc46f5eabdc010562a6a20918116e6aa89762837b4471cfcd1bdfda21d
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.6.4
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.6.4-linux-amd64-641d4bee.tgz
+  sha256: 641d4beec455eb977058f7f561d08f1a5a7a136817e64e66d1d38cdac3c2ff77
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.6.4
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.6.4-linux-amd64-05030817.tgz
+  sha256: '050308173d2a2178f725f86e6489b370fbc2d0c4680acec0b595cbf09d0183dd'
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.7.5
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.7.5-linux-amd64-92be4e62.tgz
+  sha256: 92be4e622d1def15d6eedf70b30cc296af642993541d6666e3000ccaf4f9ba28
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.7.5
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.7.5-linux-amd64-96b3fe99.tgz
+  sha256: 96b3fe99f18f5739e123bd095ffb9c2d01d8ff376459feefa835dd6c097a6cb7
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.7.6
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.7.6-linux-amd64-2fae9bae.tgz
+  sha256: 2fae9baef648dedb6c6f28089b7c1d178a5d018b1e0bd6a15dde85162035fa59
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.7.6
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.7.6-linux-amd64-651bf550.tgz
+  sha256: 651bf550db4d2e323f03338072df6e48c6912cc9cb67c049c92c629f9cbe6e59
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.8.6
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.8.6-linux-amd64-1f4451ba.tgz
+  sha256: 1f4451ba3a03e40cffb93da453920a0fdb1e4510fd7a9d2c2870ff715d2794a6
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.8.6
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.8.6-linux-amd64-809a2c5d.tgz
+  sha256: 809a2c5d25d0ff1323a815c5f4f45843e6838a46fd8297ed678a6c4072b1c322
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.8.7
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.8.7-linux-amd64-5c4d61c1.tgz
+  sha256: 5c4d61c1800f3548eede45ab912ebfcc2bc737ea60b7c3a1b2ed425345f2c0be
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.8.7
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.8.7-linux-amd64-73bcd263.tgz
+  sha256: 73bcd263289148331342897653bfeb0f2887dde64d162a8d30d002a6b74a663f
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.9.6
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.9.6-linux-amd64-278975b7.tgz
+  sha256: 278975b75192e83638c870c3a8fb3004c6e727e46da52d956f19b0d095a66399
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.9.6
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.9.6-linux-amd64-61035cf9.tgz
+  sha256: 61035cf98948990a6c7f020cdf06f782a36e72d1ec50721f9db61c1ea686d266
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.9.7
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.9.7-linux-amd64-9aab2584.tgz
+  sha256: 9aab2584ad31b2a95802189e31970a6ba9fbc7ad8149a28d9d98e2caf4edaa8e
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.9.7
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.9.7-linux-amd64-a324b95c.tgz
+  sha256: a324b95c44673ae098ad77a94b40162a0509775ce8b570cf631683e1375eeeee
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.10.2
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.10.2-linux-amd64-576d7b3a.tgz
+  sha256: 576d7b3a77d02fd2e6f72032fc05ed22ae7b7b002f789fb9ba0719eabf23d6ee
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.10.2
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.10.2-linux-amd64-96f4e0aa.tgz
+  sha256: 96f4e0aa7cb8b856fe0a833f86e3b4b7f9538de8e6782b0707bb07b8d277afed
+  cf_stacks:
+  - opensuse42
+- name: go
+  version: 1.10.3
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/go-1.10.3-linux-amd64-cbe2d8da.tgz
+  sha256: cbe2d8da2876f1e80c6466ca8a390d737ae8bbfb18f9f488793d1f37481c9977
+  cf_stacks:
+  - sle12
+- name: go
+  version: 1.10.3
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/go-1.10.3-linux-amd64-19a9ec54.tgz
+  sha256: 19a9ec54d1f844f7181dbfbb9c8337cd1b17f0bc37a2a99001201ac9782ae75b
+  cf_stacks:
+  - opensuse42
+- name: godep
+  version: '80'
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/SLE_12_SP3/godep-80-linux-x64-2a4345ca.tgz
+  sha256: 2a4345ca804fc38307e7043777414c50f8e32ee6b3db9a2cd6b0aaa45b0fe73d
+  cf_stacks:
+  - sle12
+- name: godep
+  version: '80'
+  uri: https://download.opensuse.org/repositories/Cloud:/Platform:/buildpacks:/staging:/dependencies/openSUSE_Leap_42.3/godep-80-linux-x64-27695b2d.tgz
+  sha256: 27695b2d9c13ee4ff9a4e9e55f554303db4cf405a4ae2269527a646a51b03608
+  cf_stacks:
+  - opensuse42
 include_files:
 - CHANGELOG
 - CONTRIBUTING.md
