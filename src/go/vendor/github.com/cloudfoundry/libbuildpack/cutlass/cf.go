@@ -155,6 +155,12 @@ func createBuildpack(language, file string) error {
 	if data, err := command.CombinedOutput(); err != nil {
 		return fmt.Errorf("Failed to create buildpack by running '%s':\n%s\n%v", strings.Join(command.Args, " "), string(data), err)
 	}
+	// Just a hack to fix this issue:
+	// https://github.com/cloudfoundry/libbuildpack/issues/21
+	command = exec.Command("cf", "buildpacks")
+	if data, err := command.CombinedOutput(); err == nil {
+		fmt.Println(string(data))
+	}
 	return nil
 }
 
