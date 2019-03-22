@@ -28,7 +28,7 @@ var _ = Describe("pushing an app a second time", func() {
 		app.Buildpacks = []string{"go_buildpack"}
 	})
 
-	Regexp := `\[.*\/go[\d\.]+\.linux-amd64-(cflinuxfs.*-)?[\da-f]+\.tar\.gz\]`
+	Regexp := `\[.*\/go-?[\d\.]+.linux-amd64-(.*-)?[\da-f]+\.(tar\.gz|tgz)\]`
 	DownloadRegexp := "Download " + Regexp
 	CopyRegexp := "Copy " + Regexp
 
