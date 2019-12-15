@@ -1,74 +1,114 @@
----
-language: go
 default_versions:
 - name: go
   version: 1.13.x
-dependency_deprecation_dates:
-- version_line: 1.12.x
-  name: go
-  date: 2020-02-01
-  link: https://golang.org/doc/devel/release.html
-- version_line: 1.13.x
-  name: go
-  date: 2020-09-03
-  link: https://golang.org/doc/devel/release.html
 dependencies:
-- name: dep
-  version: 0.5.4
-  uri: https://buildpacks.cloudfoundry.org/dependencies/dep/dep-v0.5.4-linux-x64-cflinuxfs3-79b3ab9e.tgz
-  sha256: 79b3ab9e67bf51bae787faaa5c78782752d0e39ea7b0d99e485a181b63a49559
-  cf_stacks:
+- cf_stacks:
   - cflinuxfs3
+  name: dep
+  sha256: 79b3ab9e67bf51bae787faaa5c78782752d0e39ea7b0d99e485a181b63a49559
   source: https://github.com/golang/dep/archive/v0.5.4.tar.gz
   source_sha256: 929c8f759838f98323211ba408a831ea80d93b75beda8584b6d950f393a3298a
-- name: glide
-  version: 0.13.3
-  uri: https://buildpacks.cloudfoundry.org/dependencies/glide/glide-v0.13.3-linux-x64-cflinuxfs3-ef07acb5.tgz
-  sha256: ef07acb5d9370cba15e8d670407c9921d2e0de18e309c07286d2ef3b4ee79857
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/dep/dep-v0.5.4-linux-x64-cflinuxfs3-79b3ab9e.tgz
+  version: 0.5.4
+- cf_stacks:
   - cflinuxfs3
+  name: glide
+  sha256: ef07acb5d9370cba15e8d670407c9921d2e0de18e309c07286d2ef3b4ee79857
   source: https://github.com/Masterminds/glide/archive/v0.13.3.tar.gz
   source_sha256: 817dad2f25303d835789c889bf2fac5e141ad2442b9f75da7b164650f0de3fee
-- name: go
-  version: 1.12.13
-  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.12.13.linux-amd64-cflinuxfs3-e218849a.tar.gz
-  sha256: e218849aaf190cfdada98d3e36662eab64c60914bf6d7ba8e520be040f673191
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/glide/glide-v0.13.3-linux-x64-cflinuxfs3-ef07acb5.tgz
+  version: 0.13.3
+- cf_stacks:
   - cflinuxfs3
+  name: go
+  sha256: e218849aaf190cfdada98d3e36662eab64c60914bf6d7ba8e520be040f673191
   source: https://dl.google.com/go/go1.12.13.src.tar.gz
   source_sha256: 5383d3b8db4baa48284ffcb14606d9cad6f03e9db843fa6d835b94d63cccf5a7
-- name: go
-  version: 1.12.14
-  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.12.14.linux-amd64-cflinuxfs3-b940bc1b.tar.gz
-  sha256: b940bc1bb309a7b381e3345315cbe0e48fb31f38afe12195c54ef37245f9a8df
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.12.13.linux-amd64-cflinuxfs3-e218849a.tar.gz
+  version: 1.12.13
+- cf_stacks:
   - cflinuxfs3
+  name: go
+  sha256: b940bc1bb309a7b381e3345315cbe0e48fb31f38afe12195c54ef37245f9a8df
   source: https://dl.google.com/go/go1.12.14.src.tar.gz
   source_sha256: 39dbf05f7e2ffcb19b08f07d53dcc96feadeb1987fef9e279e7ff0c598213064
-- name: go
-  version: 1.13.4
-  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.13.4.linux-amd64-cflinuxfs3-d7e7ae00.tar.gz
-  sha256: d7e7ae00be94366b567808802e51b7cc879ec0efe3d29b0e6d2a1fe97350cd7b
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.12.14.linux-amd64-cflinuxfs3-b940bc1b.tar.gz
+  version: 1.12.14
+- cf_stacks:
   - cflinuxfs3
+  name: go
+  sha256: d7e7ae00be94366b567808802e51b7cc879ec0efe3d29b0e6d2a1fe97350cd7b
   source: https://dl.google.com/go/go1.13.4.src.tar.gz
   source_sha256: 95dbeab442ee2746b9acf0934c8e2fc26414a0565c008631b04addb8c02e7624
-- name: go
-  version: 1.13.5
-  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.13.5.linux-amd64-cflinuxfs3-fedef14d.tar.gz
-  sha256: fedef14df0fc373546067501db2009d31516bfe9217045028b4cf8fd06afc9df
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.13.4.linux-amd64-cflinuxfs3-d7e7ae00.tar.gz
+  version: 1.13.4
+- cf_stacks:
   - cflinuxfs3
+  name: go
+  sha256: fedef14df0fc373546067501db2009d31516bfe9217045028b4cf8fd06afc9df
   source: https://dl.google.com/go/go1.13.5.src.tar.gz
   source_sha256: 27d356e2a0b30d9983b60a788cf225da5f914066b37a6b4f69d457ba55a626ff
-- name: godep
-  version: '80'
-  uri: https://buildpacks.cloudfoundry.org/dependencies/godep/godep-v80-linux-x64-cflinuxfs3-b60ac947.tgz
-  sha256: b60ac947eb80b5961285546d2a3fecd29fc4d263e02c7f2fb7a97db7e938ff9e
-  cf_stacks:
+  uri: https://buildpacks.cloudfoundry.org/dependencies/go/go1.13.5.linux-amd64-cflinuxfs3-fedef14d.tar.gz
+  version: 1.13.5
+- cf_stacks:
   - cflinuxfs3
+  name: godep
+  sha256: b60ac947eb80b5961285546d2a3fecd29fc4d263e02c7f2fb7a97db7e938ff9e
   source: https://github.com/tools/godep/archive/v80.tar.gz
-  source_sha256: '029adc1a0ce5c63cd40b56660664e73456648e5c031ba6c214ba1e1e9fc86cf6'
+  source_sha256: 029adc1a0ce5c63cd40b56660664e73456648e5c031ba6c214ba1e1e9fc86cf6
+  uri: https://buildpacks.cloudfoundry.org/dependencies/godep/godep-v80-linux-x64-cflinuxfs3-b60ac947.tgz
+  version: "80"
+- cf_stacks:
+  - sle15
+  name: dep
+  sha256: e9dc960798d17f0cb92497a4f2fae80b0920623c698cfee375ffdae30f84e427
+  uri: https://cf-buildpacks.suse.com/dependencies/dep/dep-0.5.4-linux-x64-sle15-e9dc9607.tgz
+  version: 0.5.4
+- cf_stacks:
+  - sle15
+  name: glide
+  sha256: 7f5edc6e0a246bae377e263256ce4d2b7adcf82229ff0730a66a0f35bf07faba
+  uri: https://cf-buildpacks.suse.com/dependencies/glide/glide-0.13.3-linux-x64-sle15-7f5edc6e.tgz
+  version: 0.13.3
+- cf_stacks:
+  - sle15
+  name: go
+  sha256: ab4da602631548a461f785f7b3ee19ea3b2ee1e64cc1d1943a19002b7354f3fa
+  uri: https://cf-buildpacks.suse.com/dependencies/go/go-1.12.13-linux-amd64-sle15-ab4da602.tgz
+  version: 1.12.13
+- cf_stacks:
+  - sle15
+  name: go
+  sha256: 5daf44e8fb99ade8e4dc42537fb038085da9ea5e08777c0592e569189662c8a8
+  uri: https://cf-buildpacks.suse.com/dependencies/go/go-1.12.14-linux-amd64-sle15-5daf44e8.tgz
+  version: 1.12.14
+- cf_stacks:
+  - sle15
+  name: go
+  sha256: e74dc9c1baf87e8be19c82993d5047a98efc09fff5a5742ad699c16919bb27e5
+  uri: https://cf-buildpacks.suse.com/dependencies/go/go-1.13.4-linux-amd64-sle15-e74dc9c1.tgz
+  version: 1.13.4
+- cf_stacks:
+  - sle15
+  name: go
+  sha256: 1f54bd3e76de599fb7d86f1c0b863a00bdffd394cd0a1ae974ac3003319ff91d
+  uri: https://cf-buildpacks.suse.com/dependencies/go/go-1.13.5-linux-amd64-sle15-1f54bd3e.tgz
+  version: 1.13.5
+- cf_stacks:
+  - sle15
+  name: godep
+  sha256: 3e4f7559d2af2a013e56eaf9315ebed6afef244d615f5cc7cd2373559ce33fbe
+  uri: https://cf-buildpacks.suse.com/dependencies/godep/godep-80-linux-x64-sle15-3e4f7559.tgz
+  version: "80"
+dependency_deprecation_dates:
+- date: "2020-02-01"
+  link: https://golang.org/doc/devel/release.html
+  name: go
+  version_line: 1.12.x
+- date: "2020-09-03"
+  link: https://golang.org/doc/devel/release.html
+  name: go
+  version_line: 1.13.x
 include_files:
 - CHANGELOG
 - CONTRIBUTING.md
@@ -84,4 +124,5 @@ include_files:
 - bin/release
 - bin/supply
 - manifest.yml
+language: go
 pre_package: scripts/build.sh
