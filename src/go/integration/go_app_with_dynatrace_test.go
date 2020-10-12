@@ -22,6 +22,7 @@ var _ = Describe("CF Go Buildpack", func() {
 	BeforeEach(func() {
 		dynatraceAPI = cutlass.New(Fixtures("fake_dynatrace_api"))
 		dynatraceAPI.SetEnv("BP_DEBUG", "true")
+		Skip("Dynatrace needs special setup")
 
 		Expect(dynatraceAPI.Push()).To(Succeed())
 		Eventually(func() ([]string, error) { return dynatraceAPI.InstanceStates() }, 60*time.Second).Should(Equal([]string{"RUNNING"}))
