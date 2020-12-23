@@ -21,6 +21,7 @@ var _ = Describe("override yml", func() {
 	})
 
 	BeforeEach(func() {
+		Skip("Skip cflinuxfs3 specific override test")
 		if !ApiHasMultiBuildpack() {
 			Skip("Multi buildpack support is required")
 		}
@@ -35,7 +36,7 @@ var _ = Describe("override yml", func() {
 	It("Forces go from override buildpack", func() {
 		Expect(app.V3Push()).ToNot(Succeed())
 		Expect(app.Stdout.String()).To(ContainSubstring("-----> OverrideYML Buildpack"))
-		//Expect(app.ConfirmBuildpack(buildpackVersion)).To(Succeed())
+		Expect(app.ConfirmBuildpack(buildpackVersion)).To(Succeed())
 
 		Eventually(app.Stdout.String).Should(ContainSubstring("-----> Installing go"))
 		Eventually(app.Stdout.String).Should(MatchRegexp("Copy .*/go.tgz"))
