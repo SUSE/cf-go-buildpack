@@ -22,7 +22,8 @@ var _ = Describe("Go buildpack", func() {
 		Expect(err).NotTo(HaveOccurred())
 	})
 
-	bratshelper.UnbuiltBuildpack(DEP, CopyBrats)
+	//Disable buildpack creation test for now because it is cflinuxfs3 specific
+	//bratshelper.UnbuiltBuildpack(DEP, CopyBrats)
 	bratshelper.DeployingAnAppWithAnUpdatedVersionOfTheSameBuildpack(CopyBrats)
 	bratshelper.StagingWithBuildpackThatSetsEOL(DEP, func(_ string) *cutlass.App {
 		return CopyBrats(GetOldestVersion(DEP, bpDir))
