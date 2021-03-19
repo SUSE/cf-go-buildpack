@@ -21,6 +21,7 @@ var _ = Describe("override yml", func() {
 	})
 
 	BeforeEach(func() {
+		Skip("Skip cflinuxfs3 specific override test")
 		if !ApiHasMultiBuildpack() {
 			Skip("Multi buildpack support is required")
 		}
@@ -29,7 +30,7 @@ var _ = Describe("override yml", func() {
 		Expect(cutlass.CreateOrUpdateBuildpack(buildpackName, Fixtures("overrideyml_bp"), "")).To(Succeed())
 
 		app = cutlass.New(Fixtures("without_vendoring_tool"))
-		app.Buildpacks = []string{buildpackName + "_buildpack", "go_buildpack"}
+		app.Buildpacks = []string{buildpackName + "_buildpack", "https://github.com/SUSE/cf-go-buildpack#master"}
 	})
 
 	It("Forces go from override buildpack", func() {
